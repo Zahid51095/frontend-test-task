@@ -1,5 +1,5 @@
 import './globals.scss';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 export const metadata = {
   title: 'Responsive Web Page',
@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
+        
         {children}
       </body>
     </html>

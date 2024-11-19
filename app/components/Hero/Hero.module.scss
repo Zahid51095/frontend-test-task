@@ -1,0 +1,119 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+  
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .text {
+      flex: 1;
+      max-width: 50%;
+      padding-right: 2rem;
+  
+      .badge {
+        background-color: #0070f3;
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+        line-height: 1.3;
+  
+        span {
+          color: #0070f3;
+        }
+      }
+  
+      p {
+        margin: 1rem 0;
+        font-size: 1rem;
+        color: #555;
+      }
+  
+      .buttons {
+        margin-top: 2rem;
+  
+        button {
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &.startButton {
+            background-color: #0070f3;
+            color: #fff;
+            margin-right: 1rem;
+            transition: background-color 0.3s;
+  
+            &:hover {
+              background-color: #005bb5;
+            }
+          }
+  
+          &.learnButton {
+            background-color: #fff;
+            color: #0070f3;
+            border: 1px solid #0070f3;
+            transition: background-color 0.3s, color 0.3s;
+  
+            &:hover {
+              background-color: #0070f3;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  
+    .imageContainer {
+      flex: 1;
+      position: relative;
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+  
+      .heroImage {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+  
+      .card {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        background: #fff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        h3 {
+          font-size: 1.5rem;
+          color: #0070f3;
+          margin: 0;
+        }
+  
+        p {
+          margin: 0.5rem 0 0;
+          font-size: 1rem;
+          color: #333;
+        }
+      }
+    }
+  }
+  
