@@ -1,119 +1,126 @@
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  background-color: #f9f9f9; /* Optional background color */
+
+  .content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 4rem 2rem;
-    background: #f9f9f9;
-  
-    .content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
+    align-items: center;
+    gap: 60px;
+    max-width: 1300px;
+    width: 100%;
+  }
+
+  /* Left Side Content */
+  .text {
+    flex: 1;
+    max-width: 480px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .badge {
+      background-color: #000000; /* Black background */
+      color: #ffffff; /* White text */
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
     }
-  
-    .text {
-      flex: 1;
-      max-width: 50%;
-      padding-right: 2rem;
-  
-      .badge {
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 0;
+      color: #000000; /* Black text */
+
+      span {
+        color: #0070f3; /* Blue highlight */
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #000000; /* Black text */
+      margin: 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+
+      .startButton {
+        padding: 10px 20px;
         background-color: #0070f3;
         color: #fff;
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        display: inline-block;
-        margin-bottom: 1rem;
-      }
-  
-      h1 {
-        font-size: 2.5rem;
-        color: #333;
-        line-height: 1.3;
-  
-        span {
-          color: #0070f3;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #005bb5;
         }
       }
-  
-      p {
-        margin: 1rem 0;
-        font-size: 1rem;
-        color: #555;
-      }
-  
-      .buttons {
-        margin-top: 2rem;
-  
-        button {
-          padding: 0.8rem 1.5rem;
-          font-size: 1rem;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-  
-          &.startButton {
-            background-color: #0070f3;
-            color: #fff;
-            margin-right: 1rem;
-            transition: background-color 0.3s;
-  
-            &:hover {
-              background-color: #005bb5;
-            }
-          }
-  
-          &.learnButton {
-            background-color: #fff;
-            color: #0070f3;
-            border: 1px solid #0070f3;
-            transition: background-color 0.3s, color 0.3s;
-  
-            &:hover {
-              background-color: #0070f3;
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-  
-    .imageContainer {
-      flex: 1;
-      position: relative;
-      max-width: 50%;
-      display: flex;
-      justify-content: center;
-  
-      .heroImage {
-        max-width: 100%;
-        height: auto;
-        width: auto;
-      }
-  
-      .card {
-        position: absolute;
-        bottom: 10%;
-        left: 5%;
-        background: #fff;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-  
-        h3 {
-          font-size: 1.5rem;
-          color: #0070f3;
-          margin: 0;
-        }
-  
-        p {
-          margin: 0.5rem 0 0;
-          font-size: 1rem;
-          color: #333;
+
+      .learnButton {
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #0070f3;
+        border: 2px solid #0070f3;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #0070f3;
+          color: #fff;
         }
       }
     }
   }
-  
+
+  /* Right Side Content */
+  .imageContainer {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heroImage {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        font-size: 24px;
+        color: #000000; /* Black text */
+      }
+
+      p {
+        font-size: 14px;
+        color: #000000; /* Black text */
+      }
+      
+    }
+  }
+}
